@@ -20,15 +20,14 @@ module.exports = {
   rules: {
     'react/function-component-definition': 0,
     'import/extensions': 0,
-    'import/no-unresolved': 0,        // disable import path errors
-    'import/no-extraneous-dependencies': 0,
-    'import/prefer-default-export': 0,
-    'import/no-cycle': 0,
-    'import/no-named-as-default': 0,
     'react/prop-types': 0,
     'linebreak-style': 0,
     'react/state-in-constructor': 0,
-    'max-len': [2, 550],
+    'import/prefer-default-export': 0,
+    'max-len': [
+      2,
+      550,
+    ],
     'no-multiple-empty-lines': [
       'error',
       {
@@ -62,9 +61,19 @@ module.exports = {
     'jsx-a11y/anchor-is-valid': [
       'error',
       {
-        components: ['Link'],
-        specialLink: ['to', 'hrefLeft', 'hrefRight'],
-        aspects: ['noHref', 'invalidHref', 'preferButton'],
+        components: [
+          'Link',
+        ],
+        specialLink: [
+          'to',
+          'hrefLeft',
+          'hrefRight',
+        ],
+        aspects: [
+          'noHref',
+          'invalidHref',
+          'preferButton',
+        ],
       },
     ],
   },
